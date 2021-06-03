@@ -176,7 +176,7 @@ footer {
     background-color: #252526;
 }
 
-@media (min-width: 357px) {
+@media (min-width: 376px) {
     li a {
         font-size: 1.4rem;
     }
