@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    background-color: #1e1e1e;
+}
+/* header */
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    padding: 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left li, .nav-rigth li {
+    list-style: none;
+}
+.nav-left, .nav-rigth{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-left {
+    padding: 0 0 0 0.5rem;
+}
+.nav-left li {
+    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+    list-style: none;
+}
+.smail {
+    padding: 0 1rem;
+}
+.images {
+    padding: 0 1rem 0 0;
+}
+.menu {
+    padding: 0 1rem;
+}
+.profile {
+    padding: 0 1rem 0 0.8rem;
+}
+.menu input {
+    width: 100% ;
+    padding: 4px;
+    border-radius: 100%;
+}
+.menu input:hover{
+    background-color: #3c3c3c;
+}
+.profile input {
+    width: 100% ;
+    padding: 4px;
+    border-radius: 100%;
+}
+.profile input:hover{
+    background-color: #3c3c3c;
+}
+
+.nav-left li a:hover, .nav-rigth li a:hover {
+    text-decoration: underline white;
+}
+li a {
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* main */
+.picture {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10% 5% 5% 5%;
+}
+.logo {
+    width: 100%;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5rem, 5%;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    border: white 0.5px solid;
+    border-radius: 20px;
+    height: 3.8rem;
+}
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    margin: 0 auto;
+}
+.busqueda:hover {
+    box-shadow: 0px 0px 5px 2.5px #3c3c3c;
+}
+#search{
+    width: 1.5rem;
+    margin: auto 0.4rem auto 1rem;
+}
+#microphone {
+    width: 2.9rem;
+    margin: auto 1rem auto 0.4rem;
+}
+#busqueda {
+    width: 100%; 
+    height: 4.6rem;
+    margin: auto 0;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.text { 
+    display: block;
+    text-align: center;
+    padding: 5% 0;
+    width: 50%;
+}
+p, a{
+    display: inline-block;
+    font-family: "Roboto", arial, sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+.buttom {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 1px;
+}
+.footer-caja {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 1px;
+    text-align: center;
+}
+.footer-caja a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #bbbbbb;
+}
+.cmensaje {
+    width: 100%;
+    padding: 0.9rem 0;
+    background-color: #3c3c3c;
+}
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    width: 33.33%;
+    padding: 0.9rem 0;
+    background-color: #252526;
+}
+
+@media (min-width: 357px) {
+    li a {
+        font-size: 1.4rem;
+    }
+    .menu img {
+        width:1.8rem ;
+    }
+    .profile img {
+        width: 3.3rem ;
+    }
+    p, a {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 600px) {
+    .smail {
+        padding: 0 1.5rem;
+    }
+    .images {
+        padding: 0 1.5rem 0 0;
+    }
+    .menu {
+        padding: 0 1.4rem;
+    }
+    .profile {
+        padding: 0 1.2rem 0 0.8rem;
+    }    
+    .logo {
+        width: 50%;
+    }
+    .busqueda {
+        width: 60%;
+    }
+    #busqueda {
+        height: 4rem;
+    }
+    .picture {
+        padding: 20% 5% 5% 5%;
+    }
+    .buttom {
+        display: flex;
+        padding: 1.8rem 0 0 0;
+    }
+    .spacexsearch, .lucky {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+        font-family: "Roboto",arial,sans-serif;
+        font-size: 1.4rem;
+        margin: 1.1rem 0.4rem;
+        padding: 0 1.6rem;
+        line-height: 2.7rem;
+        height: 3.6rem;
+        min-width: 5.4rempx;
+        text-align: center;
+        cursor: pointer;
+    }
+    .spacexsearch:hover, .lucky:hover {
+        box-shadow: 0px 0px 5px 1px #3c3c3c;
+    }
+}
+@media (min-width: 800px) {
+    .nav-left {
+        padding: 0 0 0 1.5rem;
+    }
+    .nav-left li {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+
+    .picture {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 4.5% 5% 3% 5%;
+    }
+    .logo {
+        width: 35%;
+    }
+    .busqueda{
+        width: 42%;
+        height: 4.5rem;
+        border-radius: 5rem;
+    }
+    .text {
+        padding: 3rem 0;
+    }
+    .c1 {
+        order: 1;
+        width: 10%;
+    }
+    .c2 {
+        order: 2;
+        width: 10%;
+    }
+    .c3 {
+        order: 3;
+        width: 10%;
+    }
+    .cmensaje {
+        order: 4;
+        width: 40%;
+        background-color: #252526;
+    }
+    .c4 {
+        order: 5;
+        width: 10%;
+    }
+    .c5 {
+        order: 6;
+        width: 10%;
+    }
+    .c6 {
+        order: 7;
+        width: 10%;
+    }
+    .footer-caja {
+        height: 5rem;
+        background-color: #252526;
+    }
+}
